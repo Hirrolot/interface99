@@ -21,4 +21,6 @@ int main(void) {
 
     ENSURE_DYN_OBJ(FooImpl, Foo);
     ENSURE_DYN_OBJ(BarImpl, Bar);
+
+    return 0;
 }

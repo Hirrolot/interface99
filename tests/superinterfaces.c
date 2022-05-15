@@ -132,4 +132,6 @@ int main(void) {
         ENSURE_DYN_OBJ(D, Foo);
         ENSURE_DYN_OBJ(D, Bar);
     }
+
+    return 0;
 }

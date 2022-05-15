@@ -116,4 +116,6 @@ int main(void) {
         assert(((TestCompoundLit *)compound.self)->d == 15);
         assert(strcmp(((TestCompoundLit *)compound.self)->str, "abc") == 0);
     }
+
+    return 0;
 }

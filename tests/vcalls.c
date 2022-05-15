@@ -105,4 +105,6 @@ int main(void) {
     }
 
 #undef RVALUE
+
+    return 0;
 }

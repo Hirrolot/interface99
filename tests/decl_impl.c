@@ -25,4 +25,6 @@ declImpl(Bar, BarImpl);
 
 int main(void) {
     test_decl_impl();
+
+    return 0;
 }

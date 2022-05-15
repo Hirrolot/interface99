@@ -49,4 +49,6 @@ int main(void) {
     assert(VTABLE(A, TestDefault).default_op == TestDefault_default_op);
     assert(VTABLE(B, TestDefault).default_op == custom_impl);
     assert(VTABLE(C, TestNoOpCustom).custom_op == custom_impl);
+
+    return 0;
 }

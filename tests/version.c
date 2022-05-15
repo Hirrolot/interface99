@@ -48,4 +48,6 @@ int main(void) {
 #undef IFACE99_MAJOR
 #undef IFACE99_MINOR
 #undef IFACE99_PATCH
+
+    return 0;
 }

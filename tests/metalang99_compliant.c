@@ -47,4 +47,6 @@ int main(void) {
 
     ENSURE_DYN_OBJ(A, Foo);
     ENSURE_DYN_OBJ(B, Foo);
+
+    return 0;
 }
