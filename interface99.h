@@ -29,8 +29,8 @@ SOFTWARE.
 
 #include <metalang99.h>
 
-#if !ML99_VERSION_COMPATIBLE(1, 13, 1)
-#error Please, update Metalang99 to v1.13.1 or later.
+#if !ML99_VERSION_COMPATIBLE(1, 13, 2)
+#error Please, update Metalang99 to v1.13.2 or later.
 #endif
 
 #ifndef IFACE99_NO_ALIASES
@@ -79,7 +79,7 @@ SOFTWARE.
 #define VTABLE99(implementer, iface)       ML99_CAT4(implementer, _, iface, _impl)
 
 #define VSelf99    void *restrict iface99_self
-#define VSELF99(T) T *restrict self = (T * restrict)(iface99_self)
+#define VSELF99(T) T *restrict self = (T *restrict)(iface99_self)
 
 #define IFACE99_MAJOR 0
 #define IFACE99_MINOR 8
