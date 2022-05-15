@@ -583,7 +583,7 @@ For methods accepting an interface object, there are `VCALL_OBJ` and `VCALL_SUPE
 
 ## Miscellaneous
 
- - The macros `IFACE99_MAJOR`, `IFACE99_MINOR`, and `IFACE99_PATCH` stand for the corresponding components of a version of Interface99.
+ - The macros `IFACE99_MAJOR`, `IFACE99_MINOR`, `IFACE99_PATCH`, `IFACE99_VERSION_COMPATIBLE(x, y, z)`, and `IFACE99_VERSION_EQ(x, y, z)` have the [same semantics as of Metalang99](https://metalang99.readthedocs.io/en/latest/#version-manipulation-macros).
 
  - For each macro using `ML99_EVAL`, Interface99 provides its [Metalang99-compliant](https://metalang99.readthedocs.io/en/latest/#definitions) counterpart which can be used inside derivers and other Metalang99-compliant macros:
 

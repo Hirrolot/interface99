@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## unreleased
 
+### Added
+
+ - `IFACE99_VERSION_COMPATIBLE` to check for a SemVer-compatible version.
+ - `IFACE99_VERSION_EQ` to check for an exact version.
+
 ## 0.8.4 - 2022-03-17
 
 ### Added

@@ -23,6 +23,7 @@ add_executable(decl_impl decl_impl.c common.h common.c)
 add_executable(metalang99_compliant metalang99_compliant.c)
 add_executable(superinterfaces superinterfaces.c common.h common.c util.h)
 add_executable(default_impl default_impl.c)
+add_executable(version version.c)
 
 add_subdirectory(.. build)
 

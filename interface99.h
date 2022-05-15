@@ -88,6 +88,13 @@ SOFTWARE.
 #define IFACE99_MAJOR 0
 #define IFACE99_MINOR 8
 #define IFACE99_PATCH 4
+
+#define IFACE99_VERSION_COMPATIBLE(x, y, z)                                                        \
+    (IFACE99_MAJOR == (x) &&                                                                       \
+     ((IFACE99_MINOR == (y) && IFACE99_PATCH >= (z)) || (IFACE99_MINOR > (y))))
+
+#define IFACE99_VERSION_EQ(x, y, z)                                                                \
+    (IFACE99_MAJOR == (x) && IFACE99_MINOR == (y) && IFACE99_PATCH == (z))
 // } (Public stuff)
 
 // Interface generation {
