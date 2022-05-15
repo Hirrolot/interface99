@@ -78,8 +78,12 @@ SOFTWARE.
 #define DYN_LIT99(implementer, iface, ...) DYN99(implementer, iface, &(implementer)__VA_ARGS__)
 #define VTABLE99(implementer, iface)       ML99_CAT4(implementer, _, iface, _impl)
 
-#define VSelf99    void *restrict iface99_self
+#define VSelf99 void *restrict iface99_self
+
+// clang-format off
+
 #define VSELF99(T) T *restrict self = (T *restrict)(iface99_self)
+// clang-format on
 
 #define IFACE99_MAJOR 0
 #define IFACE99_MINOR 8
