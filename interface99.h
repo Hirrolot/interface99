@@ -85,9 +85,9 @@ SOFTWARE.
 #define VSELF99(T) T *restrict self = (T *restrict)(iface99_self)
 // clang-format on
 
-#define IFACE99_MAJOR 0
-#define IFACE99_MINOR 8
-#define IFACE99_PATCH 4
+#define IFACE99_MAJOR 1
+#define IFACE99_MINOR 0
+#define IFACE99_PATCH 0
 
 #define IFACE99_VERSION_COMPATIBLE(x, y, z)                                                        \
     (IFACE99_MAJOR == (x) &&                                                                       \
