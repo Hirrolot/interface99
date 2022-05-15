@@ -43,4 +43,6 @@ int main(void) {
 
     (void)p1;
     (void)p2;
+
+    return 0;
 }

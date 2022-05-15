@@ -66,4 +66,6 @@ int main(void) {
 
     Droid r2_d2 = DYN_LIT(R2_D2, Droid, {0});
     VCALL_OBJ(r2_d2, turn_on);
+
+    return 0;
 }

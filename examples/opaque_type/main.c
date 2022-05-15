@@ -19,4 +19,6 @@ int main(void) {
 
     Frog_free(paul);
     Frog_free(steve);
+
+    return 0;
 }
