@@ -170,9 +170,15 @@ perim = 300
 
 ## Installation
 
-Interface99 consists of just one header `interface99.h` and one dependency [Metalang99]; therefore, you need to add `interface99` and `metalang99/include` to your include directories.
+Interface99 consists of one header file `interface99.h` and one dependency [Metalang99]. To use it in your project, you need to:
 
 [Metalang99]: https://github.com/Hirrolot/metalang99
+
+ 1. Add `interface99` and `metalang99/include` to your include directories.
+ 2. Specify [`-ftrack-macro-expansion=0`] (GCC) or [`-fmacro-backtrace-limit=1`] (Clang) to avoid useless macro expansion errors.
+
+[`-ftrack-macro-expansion=0`]: https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html
+[`-fmacro-backtrace-limit=1`]: https://clang.llvm.org/docs/ClangCommandLineReference.html#cmdoption-clang-fmacro-backtrace-limit
 
 If you use CMake, the recommended way is [`FetchContent`]:
 
@@ -190,8 +196,7 @@ FetchContent_MakeAvailable(interface99)
 
 target_link_libraries(MyProject interface99)
 
-# Interface99 relies on heavy macro machinery. To avoid useleless macro expansion
-# errors, please write this:
+# Disable full macro expansion backtraces for Metalang99.
 if(CMAKE_C_COMPILER_ID STREQUAL "Clang")
   target_compile_options(MyProject PRIVATE -fmacro-backtrace-limit=1)
 elseif(CMAKE_C_COMPILER_ID STREQUAL "GNU")
@@ -203,19 +208,9 @@ endif()
 
 [`FetchContent_Declare`]: https://cmake.org/cmake/help/latest/module/FetchContent.html#command:fetchcontent_declare
 
-Another approach is downloading Interface99 as a [Git submodule]; in this case, you can use CMake's [`add_subdirectory`]. Please, avoid directly copy-pasting `interface99.h` to your project, because it will complicate updating to new versions of Interface99 in the future.
+Optionally, you can [precompile headers] in your project that rely on Interface99. This will decrease compilation time, because the headers will not be compiled each time they are included.
 
-[Git submodule]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
-[`add_subdirectory`]: https://cmake.org/cmake/help/latest/command/add_subdirectory.html
-
-A few useful tips:
-
- - To reduce compilation times, you can try [precompiling headers] that rely on Interface99 so that they will not be compiled each time they are included.
- - **PLEASE**, do not forget to specify [`-ftrack-macro-expansion=0`] (GCC), [`-fmacro-backtrace-limit=1`] (Clang), or something similar; otherwise, Interface99 will throw your compiler to the moon.
-
-[precompiling headers]: https://en.wikipedia.org/wiki/Precompiled_header
-[`-ftrack-macro-expansion=0`]: https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html
-[`-fmacro-backtrace-limit=1`]: https://clang.llvm.org/docs/ClangCommandLineReference.html#cmdoption-clang-fmacro-backtrace-limit
+[precompile headers]: https://en.wikipedia.org/wiki/Precompiled_header
 
 Happy hacking!
 
