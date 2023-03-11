@@ -87,7 +87,7 @@ SOFTWARE.
 
 #define IFACE99_MAJOR 1
 #define IFACE99_MINOR 0
-#define IFACE99_PATCH 0
+#define IFACE99_PATCH 1
 
 #define IFACE99_VERSION_COMPATIBLE(x, y, z)                                                        \
     (IFACE99_MAJOR == (x) &&                                                                       \
