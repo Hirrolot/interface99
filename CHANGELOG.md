@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
- - Fix the `DOWNLOAD_EXTRACT_TIMESTAMP` CMake warning (see [datatype99/issues/15](https://github.com/Hirrolot/datatype99/issues/15)).
+ - Fix the `DOWNLOAD_EXTRACT_TIMESTAMP` CMake warning (see [datatype99/issues/15](https://github.com/hirrolot/datatype99/issues/15)).
 
 ## 1.0.0 - 2022-05-15
 

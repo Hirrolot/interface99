@@ -1,7 +1,7 @@
 /*
 MIT License
 
-Copyright (c) 2021-2024 Hirrolot
+Copyright (c) 2021-2024 hirrolot
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-// The official repository: <https://github.com/Hirrolot/interface99>.
+// The official repository: <https://github.com/hirrolot/interface99>.
 
 #ifndef INTERFACE99_H
 #define INTERFACE99_H

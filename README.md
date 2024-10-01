@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Interface99</h1>
-<a href="https://github.com/Hirrolot/interface99/actions">
-<img src="https://github.com/Hirrolot/interface99/workflows/C/C++%20CI/badge.svg">
+<a href="https://github.com/hirrolot/interface99/actions">
+<img src="https://github.com/hirrolot/interface99/workflows/C/C++%20CI/badge.svg">
 </a>
 <a href="https://lists.sr.ht/~hirrolot/metalang99">
 <img src="https://img.shields.io/badge/mailing%20list-lists.sr.ht-orange">
@@ -172,7 +172,7 @@ perim = 300
 
 Interface99 consists of one header file `interface99.h` and one dependency [Metalang99]. To use it in your project, you need to:
 
-[Metalang99]: https://github.com/Hirrolot/metalang99
+[Metalang99]: https://github.com/hirrolot/metalang99
 
  1. Add `interface99` and `metalang99/include` to your include directories.
  2. Specify [`-ftrack-macro-expansion=0`] (GCC) or [`-fmacro-backtrace-limit=1`] (Clang) to avoid useless macro expansion errors.
@@ -189,7 +189,7 @@ include(FetchContent)
 
 FetchContent_Declare(
     interface99
-    URL https://github.com/Hirrolot/interface99/archive/refs/tags/v1.2.3.tar.gz # v1.2.3
+    URL https://github.com/hirrolot/interface99/archive/refs/tags/v1.2.3.tar.gz # v1.2.3
 )
 
 FetchContent_MakeAvailable(interface99)
@@ -204,7 +204,7 @@ elseif(CMAKE_C_COMPILER_ID STREQUAL "GNU")
 endif()
 ```
 
-(By default, `interface99/CMakeLists.txt` downloads Metalang99 [v1.13.2](https://github.com/Hirrolot/metalang99/releases/tag/v1.13.2) from the GitHub releases; if you want to override this behaviour, you can do so by invoking [`FetchContent_Declare`] earlier.)
+(By default, `interface99/CMakeLists.txt` downloads Metalang99 [v1.13.2](https://github.com/hirrolot/metalang99/releases/tag/v1.13.2) from the GitHub releases; if you want to override this behaviour, you can do so by invoking [`FetchContent_Declare`] earlier.)
 
 [`FetchContent_Declare`]: https://cmake.org/cmake/help/latest/module/FetchContent.html#command:fetchcontent_declare
 
@@ -677,17 +677,17 @@ Thanks to Rust and Golang for their implementations of traits/interfaces.
  2. Update `CHANGELOG.md`.
  3. Release the project in [GitHub Releases].
 
-[GitHub Releases]: https://github.com/Hirrolot/interface99/releases
+[GitHub Releases]: https://github.com/hirrolot/interface99/releases
 
 ## FAQ
 
 ### Q: Why use C instead of Rust/Zig/whatever else?
 
-A: See [Datatype99's README >>](https://github.com/Hirrolot/datatype99#q-why-use-c-instead-of-rustzigwhatever-else).
+A: See [Datatype99's README >>](https://github.com/hirrolot/datatype99#q-why-use-c-instead-of-rustzigwhatever-else).
 
 ### Q: Why not third-party code generators?
 
-A: See [Metalang99's README >>](https://github.com/Hirrolot/metalang99#q-why-not-third-party-code-generators).
+A: See [Metalang99's README >>](https://github.com/hirrolot/metalang99#q-why-not-third-party-code-generators).
 
 ### Q: How does it work?
 
@@ -715,7 +715,7 @@ Other worth-mentioning projects:
 [`obj.h`]: https://github.com/small-c/obj.h
 [GObject]: https://developer.gnome.org/gobject/stable/
 [COS]: http://ldeniau.web.cern.ch/ldeniau/cos.html
-[Datatype99]: https://github.com/Hirrolot/datatype99
+[Datatype99]: https://github.com/hirrolot/datatype99
 [typeclass-interface-pattern]: https://github.com/TotallyNotChase/typeclass-interface-pattern
 [OOC]: https://www.cs.rit.edu/~ats/books/ooc.pdf
 
